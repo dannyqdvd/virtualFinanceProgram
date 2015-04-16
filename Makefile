@@ -1,8 +1,12 @@
 
-main : initialize.o  Makefile
-	g++ initialize.cpp
+main : Makefile
+	g++ initialize.cpp -o main 
 
 run : main
-	./a.out
+	./main
 
 test : run
+
+clean : 
+	rm -f *.o
+	rm -f main
