@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <iostream>
+#include <string>
+#include <sstream>
 #include "startProgram.cpp"
 
 float master [4][4];
