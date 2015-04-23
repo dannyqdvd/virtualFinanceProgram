@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12A1590D-17D7-0D9A-0141-E5FF88C61A79" name="debt">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:50:10 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="d_id" id="850E843B-ECEC-292C-8A74-D7CDF1328372">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:50:20 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="transaction_name" id="A1851706-50B4-9E9C-DCDC-D684AD57E510">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:50:32 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>455</dataTypeSize>
+</Attribute>
+<Attribute name="amount" id="97FAF02F-5CE5-2BD0-2D4B-3FCED3310C57">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:51:27 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+</Attribute>
+<Attribute name="p_id" id="2AFA90DA-9BFF-3DFE-6DF5-17D930E0BE17">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:59:32 UTC</createdTime>
+<generatorID>62310025-DBBB-7478-E483-EBF6F30E2C79</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<referedAttribute>D854884C-131F-1C63-EB23-EA679E8FFC4A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E16DCFB4-B598-6087-6653-9AACD2B36ECC" name="{entity} PK">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:50:30 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>850E843B-ECEC-292C-8A74-D7CDF1328372</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

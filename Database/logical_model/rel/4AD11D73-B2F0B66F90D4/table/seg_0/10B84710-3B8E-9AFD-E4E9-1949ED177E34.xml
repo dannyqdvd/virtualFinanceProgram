@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10B84710-3B8E-9AFD-E4E9-1949ED177E34" name="debt">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>12A1590D-17D7-0D9A-0141-E5FF88C61A79</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="d_id" id="C253B54C-4745-1CC9-F141-8F3DDD62E54A">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>850E843B-ECEC-292C-8A74-D7CDF1328372</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="transaction_name" id="AC73392A-6B39-07BD-8782-06C58C327FA4">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>A1851706-50B4-9E9C-DCDC-D684AD57E510</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>455</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="amount" id="B50DAD32-1D53-1B1F-B1D2-85F61FA25EC2">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>97FAF02F-5CE5-2BD0-2D4B-3FCED3310C57</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="people_p_id" id="05D29383-009E-4946-1584-6E3B14001542">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>2AFA90DA-9BFF-3DFE-6DF5-17D930E0BE17</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>286C226C-B64D-0C11-CAB7-D1E078BA2DCC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DE98A1D-4224-2BA5-E4D9-EF1283F1976A" referredColumn="286C226C-B64D-0C11-CAB7-D1E078BA2DCC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9D81DD5-555D-6630-48E2-CB81C952E1C4" name="debt_PK">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>E16DCFB4-B598-6087-6653-9AACD2B36ECC</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C253B54C-4745-1CC9-F141-8F3DDD62E54A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="577C9905-75FA-6569-313D-2EF472A9AACB" name="debt__IDX">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>62310025-DBBB-7478-E483-EBF6F30E2C79</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="05D29383-009E-4946-1584-6E3B14001542"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="140DBFB2-3F82-6ABA-F93B-4928EE4EDF82" name="debt_people_FK">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>62310025-DBBB-7478-E483-EBF6F30E2C79</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05D29383-009E-4946-1584-6E3B14001542"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

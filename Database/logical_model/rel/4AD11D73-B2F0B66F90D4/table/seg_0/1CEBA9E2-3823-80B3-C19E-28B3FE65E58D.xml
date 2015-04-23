@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1CEBA9E2-3823-80B3-C19E-28B3FE65E58D" name="Relation_1">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="people_p_id" id="076F28FA-06E3-2CB9-409D-D9AAA8EE4A91">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>286C226C-B64D-0C11-CAB7-D1E078BA2DCC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="44A78D26-617D-96DD-249C-2F3A2F19CAFD" referredColumn="286C226C-B64D-0C11-CAB7-D1E078BA2DCC"/>
+</associations>
+</Column>
+<Column name="debt_d_id" id="01F35F1E-0566-1083-6B2E-CF1A7866DE1E">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>C253B54C-4745-1CC9-F141-8F3DDD62E54A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7937B087-69B5-07A8-A199-C1576DB6310B" referredColumn="C253B54C-4745-1CC9-F141-8F3DDD62E54A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3CFB7BF-AF7D-260F-27D2-5643C768E88E" name="Relation_1_PK">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="076F28FA-06E3-2CB9-409D-D9AAA8EE4A91"/>
+<colUsage columnID="01F35F1E-0566-1083-6B2E-CF1A7866DE1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E8A3C64-77F4-B992-54D1-169300301693" name="FK_ASS_1">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>7ABC1455-184C-4F43-7DD6-2EAF1CFFB391</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="076F28FA-06E3-2CB9-409D-D9AAA8EE4A91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="000A8CA4-1849-BEF7-E9C9-7361E64CC5B2" name="FK_ASS_2">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>7ABC1455-184C-4F43-7DD6-2EAF1CFFB391</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01F35F1E-0566-1083-6B2E-CF1A7866DE1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

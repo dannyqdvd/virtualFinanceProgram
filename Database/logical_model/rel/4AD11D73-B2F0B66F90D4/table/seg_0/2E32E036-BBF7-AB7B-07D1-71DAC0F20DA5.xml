@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E32E036-BBF7-AB7B-07D1-71DAC0F20DA5" name="people">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>BE5CEE16-E2E4-82B0-B929-C8E76045900B</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="p_id" id="286C226C-B64D-0C11-CAB7-D1E078BA2DCC">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>D854884C-131F-1C63-EB23-EA679E8FFC4A</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="7A047F1D-C9E6-D196-268A-6C1B6C6CD6F1">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>7F1F6432-0B34-F801-E9F7-9DC90DD23DA4</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>455</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D18029F-574A-5C81-6899-38C1573DC688" name="people_PK">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>7C4CDD52-66B5-5488-9E9C-57C3F0899D68</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="286C226C-B64D-0C11-CAB7-D1E078BA2DCC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BE5CEE16-E2E4-82B0-B929-C8E76045900B" name="people">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:47:42 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="p_id" id="D854884C-131F-1C63-EB23-EA679E8FFC4A">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:47:55 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="7F1F6432-0B34-F801-E9F7-9DC90DD23DA4">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:48:12 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>455</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7C4CDD52-66B5-5488-9E9C-57C3F0899D68" name="{entity} PK">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 03:48:11 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AD11D73-3CC3-55EE-1396-B2F0B66F90D4" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D854884C-131F-1C63-EB23-EA679E8FFC4A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

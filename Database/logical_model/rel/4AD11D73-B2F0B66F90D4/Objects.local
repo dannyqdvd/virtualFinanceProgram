@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="1CEBA9E2-3823-80B3-C19E-28B3FE65E58D" name="Relation_1" seqName="seg_0"/>
+   <object objectType="Table" objectID="10B84710-3B8E-9AFD-E4E9-1949ED177E34" name="debt" seqName="seg_0"/>
+   <object objectType="Table" objectID="2E32E036-BBF7-AB7B-07D1-71DAC0F20DA5" name="people" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="44A78D26-617D-96DD-249C-2F3A2F19CAFD" name="FK_ASS_1" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7937B087-69B5-07A8-A199-C1576DB6310B" name="FK_ASS_2" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="1DE98A1D-4224-2BA5-E4D9-EF1283F1976A" name="debt_people_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

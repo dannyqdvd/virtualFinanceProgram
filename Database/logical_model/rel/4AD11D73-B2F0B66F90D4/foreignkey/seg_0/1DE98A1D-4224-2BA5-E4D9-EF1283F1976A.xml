@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1DE98A1D-4224-2BA5-E4D9-EF1283F1976A" name="debt_people_FK">
+<createdBy>dannyqdvd</createdBy>
+<createdTime>2015-04-23 04:01:01 UTC</createdTime>
+<generatorID>62310025-DBBB-7478-E483-EBF6F30E2C79</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<containerWithKeyObject>10B84710-3B8E-9AFD-E4E9-1949ED177E34</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>140DBFB2-3F82-6ABA-F93B-4928EE4EDF82</localFKIndex>
+<keyObject>0D18029F-574A-5C81-6899-38C1573DC688</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="12A1590D-17D7-0D9A-0141-E5FF88C61A79" name="debt" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BE5CEE16-E2E4-82B0-B929-C8E76045900B" name="people" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7ABC1455-184C-4F43-7DD6-2EAF1CFFB391" name="Relation_1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="62310025-DBBB-7478-E483-EBF6F30E2C79" name="Relation_3" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>
