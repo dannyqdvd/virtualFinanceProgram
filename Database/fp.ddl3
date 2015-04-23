@@ -1,0 +1,87 @@
+-- Table Relation_1 has a compound primary key so no sequence or trigger was created for it.
+DROP SEQUENCE debt_seq ; 
+create sequence debt_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger debt_PK_trig 
+before insert on debt
+for each row 
+begin 
+select debt_seq.nextval into :new.d_id from dual; 
+end; 
+/
+alter table debt add created date ; 
+alter table debt add created_by VARCHAR2 (255) ; 
+alter table debt add row_version_number integer ; 
+alter table debt add updated date ; 
+alter table debt add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger debt_AUD_trig 
+before insert or update on debt 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE people_seq ; 
+create sequence people_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger people_PK_trig 
+before insert on people
+for each row 
+begin 
+select people_seq.nextval into :new.p_id from dual; 
+end; 
+/
+alter table people add created date ; 
+alter table people add created_by VARCHAR2 (255) ; 
+alter table people add row_version_number integer ; 
+alter table people add updated date ; 
+alter table people add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger people_AUD_trig 
+before insert or update on people 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP INDEX people_p_id_FK_0 ;
+CREATE INDEX people_p_id_FK_0 ON Relation_1(people_p_id) ;
+DROP INDEX debt_d_id_FK_1 ;
+CREATE INDEX debt_d_id_FK_1 ON Relation_1(debt_d_id) ;
+DROP INDEX people_p_id_FK_2 ;
+CREATE INDEX people_p_id_FK_2 ON debt(people_p_id) ;

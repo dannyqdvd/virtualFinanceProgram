@@ -1,0 +1,41 @@
+-- Table Relation_1 has a compound primary key so no sequence or trigger was created for it.
+DROP SEQUENCE debt_seq ; 
+create sequence debt_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER debt_PK_trig 
+; 
+
+create or replace trigger debt_PK_trig 
+before insert on debt
+for each row 
+begin 
+select debt_seq.nextval into :new.d_id from dual; 
+end; 
+/
+
+DROP SEQUENCE people_seq ; 
+create sequence people_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER people_PK_trig 
+; 
+
+create or replace trigger people_PK_trig 
+before insert on people
+for each row 
+begin 
+select people_seq.nextval into :new.p_id from dual; 
+end; 
+/
+
+DROP INDEX people_p_id_FK_0 ;
+CREATE INDEX people_p_id_FK_0 ON Relation_1(people_p_id) ;
+DROP INDEX debt_d_id_FK_1 ;
+CREATE INDEX debt_d_id_FK_1 ON Relation_1(debt_d_id) ;
+DROP INDEX people_p_id_FK_2 ;
+CREATE INDEX people_p_id_FK_2 ON debt(people_p_id) ;
